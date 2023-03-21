@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Road Safety Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add this code to your styles.css file */
+
+body {
+
+   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* Add a background image */
+  background-image: url('roadsafety.jpg');
+  background-size: cover;
+}
+header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+    display:inline-block; 
+    margin-left :20px; 
+}
+
+header nav a {
+    color:white; 
+    text-decoration:none; 
+}
+
+/* Add this code to your styles.css file */
+
+@keyframes running {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100px); }
+}
+
+.runner {
+  animation: running 1s linear infinite;
+}
+
+
+
+
+main {
+    max-width :800px; 
+    margin:auto; 
+    padding :40px; 
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Road Safety Website</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tips">Safety Tips</a></li>
+          <li><a href="#laws">Traffic Laws</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home section -->
+    <main id="home">
+      <h2>Welcome to our Road Safety Website!</h2>
+
+      <!-- Add your content here -->
+    THIS IS A WEBSITE PROVIDED BY THE RAJASTHAN GOVERNMENT IN ORDER TO ENSURE THE ROAD SAFETY . HERE YOU CAN RAISE ANY ISSUEE REGARDING ROAD AND VOILATION OF THE SAFETY RULES . HERE WE CAN CALL FOR HELP IN CASE OF ANY EMERGENCY SITUATION .
+
+      <!-- Safety Tips section -->
+      <section id="tips">
+        <h3>Safety Tips</h3>
+
+        <!-- Add your content here -->
+        Here are some road safety tips that everyone should know to ensure safety while driving:
+
+        <p>1. Stay focused: It is essential to focus on driving when you are behind the steering wheel. Refrain from using your smartphone, tablet or any other electronic device.</p><br>
+        <p>2. Do not drive in a bad mood: Negative emotions can adversely affect your concentration on the road.</p><br>
+        <p>3. Stop on Red: Always stop at red lights.</p><br>
+        <p>4. Obey traffic signals and signs: Follow posted speed limits and other traffic rules.</p><br>
+        <p>5. distractions: such as phone calls while driving.</p><br>
+        <p>6. wear a seat belt: This can help protect you in case of an accident.</p><br>
+        <p>7. These are just a few tips to help you stay safe on the road. Remember to always be aware of your surroundings and drive defensively.</p><br>
+
+        <!-- Traffic Laws section -->
+        <section id="laws">
+          <h3>Traffic Laws</h3>       
+
+          <!-- Add your content here -->
+          <p>Traffic signal laws vary by country and region. In general, traffic signals are designed to enable smooth traffic flow at intersections, crossroads and zebra crossings. Following traffic signal rules ensures that there are minimal road mishaps.</p><br>
+
+          <p>In India, for example, disobeying any mandatory traffic sign is a crime punishable by law2. The traffic control signals are based on a three-color light system: red, yellow, and green. The red light means stop, while the yellow means to wait or go slow, and the green light means that vehicles are allowed to go ahead.</p><br>
+          
+          <p>In the United States, drivers should always use their turn signals when making turns or changing lanes. On freeways and highways, slower traffic generally stays in the right-hand lanes while faster drivers stick to the left-hand lanes.</p><br>
+          
+          <p>It’s important to follow traffic signal rules for your safety and the safety of others on the road.</p><br>
+
+          <!-- Contact Us section -->
+          <section id="contact">
+            <h3>Contact Us</h3>
+
+            <!-- Add your content here -->
+           <p> you can contact us on roadssafety@raj.gov.in</p><br>
+           <p>Call us on helpline number: 112(toll free)</p><br>
+            <h4>Feedback For Road Safety :- </h4>
+           <p>IF YOU HAVE ANY ISSUE REGARDING THE ROADS , TRAFFIC LAWS ,TRAFFIC SIGNAL AND ANY SUGGESTION FOR THE BETTERFICATION AND MODIFICATION OF THE ROAD SAFETY ENVIRONMENT AROUND US PLEASE ENTER YOUR OPPNION IN THE GIVEN DESCRIPTION BOX.YOU CAN ALSO ATTACH  AN IMAGE TO THE ISSUE .</p><br>
+            <form id="reportForm">
+              <label for="location">Location:</label><br />
+              <input type="text" id="location" name="location" /><br />
+              <label for="description">Description:</label><br />
+              <textarea id="description" name="description"></textarea><br />
+              <label for="image">Image:</label><br />
+              <input type="file" id="image" name="image" /><br />
+               <input type="submit" value="Submit Report" /> 
+             </form> 
+        
+             <script> 
+               document.getElementById("reportForm").addEventListener("submit", function (event) { 
+                 event.preventDefault(); 
+                 var location = document.getElementById("location").value; 
+                 var description = document.getElementById("description").value; 
+                 var image = document.getElementById("image").files[0];
+                 // Submit the report to the server
+                 // ...
+                 alert("Report submitted. Thank you!");
+               });
+             </script>
+        <!-- Footer -->
+            </main>
+           
+
+            </body>
+
+            </html>```
